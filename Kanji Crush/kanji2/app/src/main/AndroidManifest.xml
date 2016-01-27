@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alexandrepc.kanji2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider android:authorities="com.facebook.app.FacebookContentProvider414512702062804"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider414512702062804"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".ChoiceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Grid1Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Grid2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Grid3Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

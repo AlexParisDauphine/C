@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:alertDialogTheme">@style/CustomDialogTheme</item>
+        <!-- Customize your theme here.-->
+    </style>
+
+    <style name="CustomListView" parent="@android:style/Widget.ListView">
+        <item name="android:background">@drawable/fondliste4</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+    <style name="ButtonChoice">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:background">@drawable/buttonplay</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BasicText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BoldText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomProgressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+
+<!--    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/lilas</item>
+        <item name="android:background">@color/darkpurple</item>
+        <item name="android:textColorAlertDialogListItem">@color/yellow</item>
+        <item name="android:dialogMessage">@color/yellow</item>
+    </style>-->
+
+    <color name="black">#ff000000</color>
+    <color name="darkpurple">#ff391f44</color>
+    <color name="purple">#ff561085</color>
+    <color name="lilas">#ffcab9db</color>
+    <color name="lightpurple">#ff96899d</color>
+    <color name="yellow">#fff1e098</color>
+    <color name="lightyellow">#fff8f1bb</color>
+
+</resources>

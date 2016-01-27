@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background = "@drawable/fond18681"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/ListSens"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:background="@drawable/linearborder">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            style="@style/CustomListView"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="98">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/Score"
+            android:background="@color/darkpurple"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="@string/other_zero"
+                android:id="@+id/textViewScore"
+                android:layout_gravity="start|center_vertical"
+                android:layout_margin="10dp"
+                android:textSize="25sp"
+                android:textColor="@color/yellow"
+                android:gravity="start|center_vertical" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/grid_startgame"
+                android:id="@+id/textViewInfo"
+                android:layout_gravity="center"
+                android:background="@color/lilas"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                style="@style/BasicText"
+                android:layout_weight="1" />
+
+            <Chronometer
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/chronometer"
+                android:layout_gravity="end|center_vertical"
+                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/yellow"
+                android:gravity="center_vertical|end" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="86"
+            android:id="@+id/FrameGrid">
+            <GridView
+                android:id="@+id/Grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:verticalSpacing="3dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="5"
+                android:gravity="center"
+
+                android:layout_gravity="center"
+                android:fadingEdge="none"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/Jokers"
+            android:background="@color/darkpurple"
+            android:layout_weight="5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/buttonTime"
+                    android:background="@drawable/jokertime"
+                    android:layout_centerInParent="true"/>
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/GridNbJokTime"
+                    android:textStyle="normal"
+                    android:layout_toEndOf="@+id/buttonTime"
+                    android:layout_toRightOf="@+id/buttonTime"
+                    android:layout_alignBottom="@+id/buttonTime" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/buttonDelete"
+                    android:background="@drawable/jokerbomb"
+                    android:layout_centerInParent="true"/>
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokBomb"
+                    android:textStyle="normal"
+                    android:layout_toEndOf="@+id/buttonDelete"
+                    android:layout_toRightOf="@+id/buttonDelete"
+                    android:layout_alignBottom="@+id/buttonDelete" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/buttonIndication"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/jokerindication"/>
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokIndication"
+                    android:textStyle="normal"
+                    android:layout_alignBottom="@+id/buttonIndication"
+                    android:layout_toRightOf="@+id/buttonIndication"
+                    android:layout_toEndOf="@+id/buttonIndication" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/buttonBomb"
+                    android:layout_gravity="center"
+                    android:background="@drawable/jokerlinebomb"
+                    android:layout_centerInParent="true"/>
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokLineBomb"
+                    android:textStyle="normal"
+                    android:layout_toEndOf="@+id/buttonBomb"
+                    android:layout_toRightOf="@+id/buttonBomb"
+                    android:layout_alignBottom="@+id/buttonBomb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/buttonMix"
+                    android:layout_gravity="start|center_vertical"
+                    android:background="@drawable/jokercolumnbomb"
+                    android:layout_centerInParent="true"/>
+                <Button
+                    style="@style/ButtonChoice"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokColumnBomb"
+                    android:textStyle="normal"
+                    android:layout_toEndOf="@+id/buttonMix"
+                    android:layout_toRightOf="@+id/buttonMix"
+                    android:layout_alignBottom="@+id/buttonMix" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/ListPhonetique"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:background="@drawable/linearborder">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView2"
+            style="@style/CustomListView"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

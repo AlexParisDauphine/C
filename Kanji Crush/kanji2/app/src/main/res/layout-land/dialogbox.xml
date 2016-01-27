@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="7dp"
+    android:background="@color/yellow"
+    android:alpha="0.8"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/idtextscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialogbox_score"
+            android:textSize="16sp"
+            style="@style/BasicText" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/ScoreAffiche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/other_zero"
+        android:textSize="20sp"
+        style="@style/BoldText"
+        android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+        android:id="@+id/leveltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogbox_level"
+        android:textSize="15sp"
+        android:layout_weight="25"
+        style="@style/BasicText" />
+        <TextView
+            android:id="@+id/valuelvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other_zero"
+            android:textSize="15sp"
+            android:layout_weight="25"
+            style="@style/BasicText" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="15"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+    <ProgressBar
+        android:id="@+id/PBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:maxHeight="20dip"
+        android:minHeight="20dip"
+        android:progress="20"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false" />
+
+        <TextView
+            android:id="@+id/Pgression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:layout_alignBottom="@+id/PBar"
+            android:layout_alignTop="@+id/PBar"
+            style="@style/BoldText" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="25">
+
+        <TextView
+            android:text=""
+            android:id="@+id/jokerdrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="25"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/Star1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/redstar" />
+
+        <ImageView
+            android:id="@+id/Star2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/redstar" />
+
+        <ImageView
+            android:id="@+id/Star3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/redstar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/buttonPlayAgain"
+            android:alpha="0.9"
+            android:background="@color/lightpurple"
+            android:text="@string/dialogbox_replay"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:layout_margin="5dp"
+            android:layout_weight="33"
+            android:textSize="12sp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/buttonHome"
+            android:alpha="0.9"
+            android:background="@color/lightpurple"
+            android:text="@string/dialogbox_home"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:layout_margin="5dp"
+            android:layout_weight="33"
+            android:textSize="12sp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/buttonDetail"
+            android:alpha="0.9"
+            android:background="@color/lightpurple"
+            android:text="@string/dialogbox_details"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:layout_margin="5dp"
+            android:layout_weight="33"
+            android:textSize="12sp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFacebook"
+        android:alpha="0.9"
+        android:background="@drawable/partage"
+        android:textStyle="bold"
+        android:textColor="#fffee4c0"
+        android:layout_margin="5dp"
+        android:layout_weight="20"
+        android:textSize="12sp"
+        android:layout_gravity="center" />
+
+
+
+</LinearLayout>

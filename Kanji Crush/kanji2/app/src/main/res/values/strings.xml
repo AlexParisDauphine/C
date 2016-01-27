@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kanji Crush</string>
+    <string name="app_name_cap">KANJI CRUSH</string>
+    <string name="app_kanji">漢</string>
+
+    <string name="main_play">JOUER</string>
+    <string name="main_profile">PROFIL</string>
+    <string name="main_credits">CREDITS</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="profile_exp">Expérience</string>
+    <string name="profile_jokers">Jokers disponibles</string>
+
+    <string name="facebook_app_id">414512702062804</string>
+
+    <string name="profile_jokerTime">Joker temps</string>
+    <string name="profile_jokerTime_Description">Retire 10 secondes au chronomètre.</string>
+    <string name="profile_jokerBomb">Joker bombe</string>
+    <string name="profile_jokerBomb_Description">Supprime un caractère.</string>
+    <string name="profile_jokerIndication">Joker indice</string>
+    <string name="profile_jokerIndication_Description">Donne un indice sur l\'un des caractères.</string>
+    <string name="profile_jokerLine">Joker bombe ligne</string>
+    <string name="profile_jokerLine_Description">Supprime tous les caractères d\'une ligne.</string>
+    <string name="profile_jokerColumn">Joker bombe colonne</string>
+    <string name="profile_jokerColumn_Description">Supprime tous les caractères d\'une colonne.</string>
+
+    <string name="choice_title">Sélection du niveau</string>
+    <string name="choice_type1">Kanji</string>
+    <string name="choice_type2">Hiragana</string>
+    <string name="choice_type3">Katakana</string>
+    <string name="choice_unset">-</string>
+    <string name="choice_level1">Level 1</string>
+    <string name="choice_level2">Level 2</string>
+    <string name="choice_mode1">Phonétique</string>
+    <string name="choice_mode2">Sens</string>
+    <string name="choice_mode3">Phonétique et sens</string>
+
+    <string name="grid_startgame">Bonne chance !</string>
+
+    <string name="dialogbox_replay">REJOUER</string>
+    <string name="dialogbox_home">ACCUEIL</string>
+    <string name="dialogbox_details">DETAILS</string>
+    <string name="dialogbox_score">Score final :</string>
+    <string name="dialogbox_level">Niveau : </string>
+
+
+    <string name="other_zero">3</string>
+
+</resources>

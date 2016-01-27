@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background = "@drawable/fond7"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+   >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/textViewChoiceTitle"
+        android:textSize="150sp"
+        android:textIsSelectable="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        style="@style/BoldText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="80dp"
+        android:paddingTop="80dp"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="250dp"
+            android:id="@+id/imageButton"
+            android:text="@string/main_play"
+            android:focusable="false"
+            style="@style/ButtonChoice"
+            android:background="@drawable/buttonplay"
+            android:layout_height="219dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+        android:layout_width="200dp"
+        android:id="@+id/imageButton2"
+        android:text="@string/main_profile"
+        style="@style/ButtonChoice"
+        android:background="@drawable/buttonplay"
+        android:layout_height="175dp"
+        android:layout_gravity="bottom|center_vertical"
+        android:layout_marginBottom="13dp" />
+
+        <Button
+            android:layout_width="160dp"
+            android:id="@+id/imageButton3"
+            android:text="@string/main_credits"
+            style="@style/ButtonChoice"
+            android:background="@drawable/buttonplay"
+            android:layout_height="140dp"
+            android:layout_gravity="center_vertical|bottom"
+            android:layout_marginBottom="15dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

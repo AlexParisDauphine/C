@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background = "@drawable/fond18681">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/relativeLayout"
+        android:layout_weight="20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_title"
+            android:id="@+id/textViewProfileTitle"
+            android:textStyle="bold"
+            android:textSize="80sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            style="@style/BasicText" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="80"
+        android:padding="5dp"
+        android:baselineAligned="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/linearborder"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:orientation="vertical"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:layout_weight="50">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_exp"
+                    android:textSize="45sp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkpurple"
+                    android:id="@+id/TextViewProfileExp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="25"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linxxayout"
+                    android:orientation="vertical"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:paddingRight="7dp"
+                    android:paddingLeft="7dp"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/Level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/BasicText"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/BasicText"
+                        android:textSize="26sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="25"
+                android:layout_gravity="center"
+                android:gravity="center_vertical">
+
+                <ProgressBar
+                    android:id="@+id/ProgressBar"
+                    style="@style/CustomProgressBarHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:max="100"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:progressDrawable="@drawable/progressbar"
+                    android:indeterminate="false"
+                    android:indeterminateOnly="false"
+                    android:progress="100" />
+
+                <TextView
+                    android:id="@+id/Progression"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@+id/ProgressBar"
+                    android:layout_alignTop="@+id/ProgressBar"
+                    style="@style/BoldText" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="25"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/totalXp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/BestScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_below="@id/totalXp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout"
+            android:background="@drawable/linearborder"
+            android:orientation="vertical"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginLeft="2.5dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:layout_weight="50">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_jokers"
+                    android:textSize="45sp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkpurple"
+                    android:id="@+id/TextViewProfileJokers"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/imageViewTime"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/jokertime"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageViewTime"
+                    android:layout_toEndOf="@+id/imageViewTime"
+                    android:id="@+id/RelativeLayoutTextTime">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/profile_jokerTime"
+                        android:id="@+id/textViewTime"
+                        style="@style/BoldText"
+                        android:textSize="22sp"
+                        android:layout_alignParentTop="true"
+                        android:textIsSelectable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_jokerTime_Description"
+                        android:id="@+id/textViewTime2"
+                        android:layout_below="@+id/textViewTime"
+                        android:layout_alignLeft="@+id/textViewTime"
+                        android:layout_alignStart="@+id/textViewTime" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokTime"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    style="@style/ButtonChoice" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/imageViewBomb"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/jokerbomb"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageViewBomb"
+                    android:layout_toEndOf="@+id/imageViewBomb"
+                    android:id="@+id/RelativeLayoutTextBomb">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/profile_jokerBomb"
+                        android:id="@+id/textViewBomb"
+                        style="@style/BoldText"
+                        android:textSize="22sp"
+                        android:textIsSelectable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_jokerBomb_Description"
+                        android:id="@+id/textViewBomb2"
+                        android:layout_below="@+id/textViewBomb"
+                        android:layout_alignLeft="@+id/textViewBomb"
+                        android:layout_alignStart="@+id/textViewBomb" />
+                </RelativeLayout>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokBomb"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    style="@style/ButtonChoice" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/imageViewIndication"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/jokerindication"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageViewIndication"
+                    android:layout_toEndOf="@+id/imageViewIndication"
+                    android:id="@+id/RelativeLayoutTextIndication">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/profile_jokerIndication"
+                        android:id="@+id/textViewIndication"
+                        style="@style/BoldText"
+                        android:textSize="22sp"
+                        android:textIsSelectable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_jokerIndication_Description"
+                        android:id="@+id/textViewIndication2"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@+id/textViewIndication"
+                        android:layout_alignLeft="@+id/textViewIndication"
+                        android:layout_alignStart="@+id/textViewIndication" />
+                </RelativeLayout>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokIndication"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    style="@style/ButtonChoice" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/imageViewLine"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/jokerlinebomb"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageViewLine"
+                    android:layout_toEndOf="@+id/imageViewLine"
+                    android:id="@+id/RelativeLayoutTextLine">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/profile_jokerLine"
+                        android:id="@+id/textViewLine"
+                        style="@style/BoldText"
+                        android:textSize="22sp"
+                        android:textIsSelectable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_jokerLine_Description"
+                        android:id="@+id/textViewLine2"
+                        android:layout_below="@+id/textViewLine"
+                        android:layout_alignLeft="@+id/textViewLine"
+                        android:layout_alignStart="@+id/textViewLine" />
+                </RelativeLayout>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokLineBomb"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    style="@style/ButtonChoice" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/imageViewColumn"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/jokercolumnbomb"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageViewColumn"
+                    android:layout_toEndOf="@+id/imageViewColumn"
+                    android:id="@+id/RelativeLayoutTextColumn">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/profile_jokerColumn"
+                        android:id="@+id/textViewColumn"
+                        style="@style/BoldText"
+                        android:textSize="22sp"
+                        android:textIsSelectable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_jokerColumn_Description"
+                        android:id="@+id/textViewColumn2"
+                        android:layout_below="@+id/textViewColumn"
+                        android:layout_alignLeft="@+id/textViewColumn"
+                        android:layout_alignStart="@+id/textViewColumn" />
+
+
+                </RelativeLayout>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:text="@string/other_zero"
+                    android:id="@+id/NbJokColumnBomb"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    style="@style/ButtonChoice" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

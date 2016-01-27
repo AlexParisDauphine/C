@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/fond18681"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choice_title"
+        android:id="@+id/textViewChoiceTitle"
+        android:textSize="90sp"
+        android:textIsSelectable="false"
+        android:layout_gravity="center_horizontal"
+        style="@style/BoldText"
+        android:layout_weight="20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="65"
+        android:focusable="false">
+
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayoutType"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonMinusType"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/goup" />
+
+            <TextView
+                android:id="@+id/textView1Type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/choice_type2"
+                android:textColor="@color/lightpurple"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="3dp"
+                android:singleLine="false" />
+
+            <View
+                android:id="@+id/view1Type"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+
+            <TextView
+                android:id="@+id/textView2Type"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="@string/choice_type1"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:singleLine="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
+
+            <View
+                android:id="@+id/view2Type"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView3Type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/choice_type3"
+                android:textColor="@color/lightpurple"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="3dp"/>
+
+            <Button
+                android:id="@+id/buttonPlusType"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/godown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayoutLvl"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp">
+
+            <Button
+                android:id="@+id/buttonMinusLvl"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/goup" />
+
+            <TextView
+                android:id="@+id/textView1Lvl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/choice_unset"
+                android:textColor="@color/lightpurple"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="3dp" />
+
+            <View
+                android:id="@+id/view1Lvl"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+            <TextView
+                android:id="@+id/textView2Lvl"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="@string/choice_level1"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:singleLine="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
+
+            <View
+                android:id="@+id/view2Lvl"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView3Lvl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/choice_level2"
+                android:textColor="@color/lightpurple"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="3dp"/>
+
+
+            <Button
+                android:id="@+id/buttonPlusLvl"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/godown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayoutMode"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonMinusMode"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/goup" />
+
+            <TextView
+                android:id="@+id/textView1Mode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/choice_mode2"
+                android:textColor="@color/lightpurple"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="3dp" />
+
+            <View
+                android:id="@+id/view1Mode"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+            <TextView
+                android:id="@+id/textView2Mode"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="@string/choice_mode1"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:singleLine="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
+
+            <View
+                android:id="@+id/view2Mode"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView3Mode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/choice_mode3"
+                android:textColor="@color/lightpurple"
+                android:textSize="15sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="3dp"/>
+
+            <Button
+                android:id="@+id/buttonPlusMode"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/godown" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        style="@style/ButtonChoice"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/buttonselect"
+        android:text="@string/main_play"
+        android:focusable="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="15"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>
