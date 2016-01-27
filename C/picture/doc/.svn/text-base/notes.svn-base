@@ -1,0 +1,28 @@
+*** Conception ***
+
+
+Struct Grille (colonne,ligne,sequences[][],cases[][])
+
+- LireGrille(Fichier f) : retourne une grille à partir d'un fichier en lecture
+
+- Afficher une grille (Grille g)
+
+- (créer une grille aléatoirement, avec mode de jeu différents ?)
+
+- bibliothèque ncurses : graphique
+
+- cpt : compteur de noirs, s'il y a le bon nombre de noirs on vérifie si le joueur a gagné
+
+- GrilleValable(Grille g): retourne un booléen 
+
+- ResultatGrille(Grille) : algorithme relou
+
+*** Réalisation/Modélisation ***
+
+Fichiers:
+
+-main.c
+-structures.h
+-grille.c grille.h (afficher,lire,grillevalable)
+-random.c random.h : (creerGrille, resultatgrille)
+-manuel.c : création de grille 

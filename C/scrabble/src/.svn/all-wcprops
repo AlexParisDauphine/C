@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/s5-scrab-344/!svn/ver/33/src
+END
+algorithm.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/s5-scrab-344/!svn/ver/32/src/algorithm.h
+END
+grille.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/s5-scrab-344/!svn/ver/32/src/grille.c
+END
+letters.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/s5-scrab-344/!svn/ver/31/src/letters.c
+END
+grille.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/s5-scrab-344/!svn/ver/32/src/grille.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/s5-scrab-344/!svn/ver/33/src/main.c
+END
+algorithm.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/s5-scrab-344/!svn/ver/32/src/algorithm.c
+END
+letters.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/s5-scrab-344/!svn/ver/31/src/letters.h
+END
+structures.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/s5-scrab-344/!svn/ver/30/src/structures.h
+END

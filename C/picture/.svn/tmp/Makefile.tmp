@@ -1,0 +1,12 @@
+picture:  src/main.c src/structures.h src/grid.h src/fill_grid.h
+	cc -std=c99 -lncurses -o picture src/main.c src/structures.h src/grid.h src/fill_grid.h
+
+
+grid.o: src/grid.h  src/grid.c src/structures.h
+	cc -std=c99 -lncurses-o grid.o src/grid.h src/grid.c src/structures.h
+
+fill_grid.o: src/fill_grid.h src/fill_grid.c src/structures.h
+	cc -std=c99 -o fill_grid.o src/fill_grid.h src/fill_grid.c src/structures.h
+
+clean :
+	rm picture

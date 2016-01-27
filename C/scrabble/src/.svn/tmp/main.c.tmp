@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include "structures.h"
+#include "grille.h"
+#include "letters.h"
+#include "algorithm.h"
+
+int main(int argc, char ** argv)
+{
+<<<<<<< .mine
+	filldico("/net/ens/renault/dicoScrabble.txt",dictionary);
+	createAlphabet();
+	createLettersValue();
+	struct box Grille[15][15];
+	createGrille(Grille);
+	addWordGrille(Grille, "BONJOUR", 0,4,5); 
+	displayGrille(Grille); 
+	return 0;	
+=======
+  if(strcmp(argv[1], "-f") == 0){
+    createAlphabetByFile(argv[2]);
+  }
+  else {	
+    creatAlphabetRandom();
+  }	
+
+createLettersValue();struct box Grille[15][15];
+createGrille(Grille);
+addWordGrille(Grille, "BONJOUR", 0,4,5); 
+displayGrille(Grille); 
+ return 0;	
+>>>>>>> .r17
+}

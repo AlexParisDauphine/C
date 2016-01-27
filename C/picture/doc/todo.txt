@@ -1,0 +1,23 @@
+Planning des tâches: 
+
+Semaine du 18/11/13
+Anas: 
+-règles 2 et 3 de l'algorithme.
+-Création du menu (voir tâche J-P)
+
+
+J-P:
+-règles 2 et 3 de l'algorithme.
+- Création du menu :
+	-> 3 modes de jeux:
+		- Mode campagne (10 niveaux de plus en plus dur).
+		- Mode aléatoire (charge une grille VALIDE aléatoirement).
+		- Mode charger un fichier perso.
+-(auto formation ncurses)
+
+
+
+William:
+- Exporter la grille dans un fichier(sauvegarder) //Fait
+- terminer la fonction display //en attente ncurses
+- Commencer intéraction homme/machine( faire jouer le joueur)

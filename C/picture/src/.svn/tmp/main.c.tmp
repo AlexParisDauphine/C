@@ -1,0 +1,31 @@
+#include "structures.h"
+#include "fill_grid.h"
+#include "grid.h"
+#include "glue.h"
+
+int main(int argc, char *argv)
+{
+	//ncurses initialisation
+	initscr();			/* Start curses mode 		  */
+	raw();				/* Line buffering disabled	*/
+	keypad(stdscr, TRUE);		/* We get F1, F2 etc..		*/
+	noecho();			/* Don't echo() while we do getch */
+	
+<<<<<<< .mine
+	struct grid Grid = createGrid("src/files/test2.txt");
+	displayGrid(Grid);
+=======
+	struct grid Grid = createGrid("src/files/grille3.txt");
+	//	printw("%d\n", Grid.sequences[5][1]);
+	fill_grid_by_black_cases (&Grid);	
+displayGrid(Grid);
+>>>>>>> .r25
+	saveGrid("src/files/test.txt", Grid);
+	
+	
+
+	endwin();			/* End curses mode		  */
+	
+	return 0;
+
+}
